@@ -1,0 +1,58 @@
+header {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 20px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none; /* This removes the bullet points */
+}
+
+nav i {
+    font-size: 25px;
+    margin: 0 50px;
+    transition: all .5s ease;
+}
+
+nav i:hover {
+    text-decoration: underline;
+}
+
+.website-name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+    white-space: nowrap;
+    transition: all .5s ease;
+    cursor: pointer;
+   
+}
+
+.website-name:hover {
+    transform: translateX(20px);
+    /* Increase size by 20% on hover */
+    color: red;
+}
+
+/*responsive*/
+@media (max-width:903px) {
+    .navlist {
+        display:none;
+    }
+
+    
+}
+

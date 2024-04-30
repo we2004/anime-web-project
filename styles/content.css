@@ -1,0 +1,122 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 25px;
+}
+
+.content {
+    display: inline-block;
+    width: 200px;
+}
+
+
+.firstline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.heart-icon i {
+    font-size: 25px;
+    transition: all .5s ease;
+}
+
+.heart-icon i:hover {
+    transform: scale(1.5);
+    /* Increase size by 20% on hover */
+    color: red;
+}
+
+
+.english-name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    transition: all .5s ease;
+    /* line-height: 30px; */
+}
+
+.english-name:hover {
+    transform: translateX(-1.5px);
+    /* Increase size by 20% on hover */
+    color: red;
+}
+
+.poster-img img {
+    width: 200px;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+.poster-img {
+    position: relative;
+
+}
+
+.tooltip {
+    position: absolute;
+    background-color: black;
+    padding: 15px 22px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+    white-space: nowrap;
+    border: 1px solid white;
+}
+
+.poster-img:hover .tooltip {
+    opacity: 1;
+}
+
+.poster-img img:hover {
+    /* transform: scale(1.1); */
+    transform:translateY(-14px);
+    border-color: red;
+}
+
+.anime-info {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.japan-name {
+    font-weight: 700;
+}
+
+@media (max-width: 1744px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+@media (max-width: 1582px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+@media (max-width: 1354px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+@media (max-width: 945px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (max-width: 687px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+}

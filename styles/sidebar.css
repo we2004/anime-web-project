@@ -1,0 +1,78 @@
+aside {
+    background-color: black;
+    position: fixed;
+    z-index: 500;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    width: 350px;
+    border-right: 1px solid white;
+}
+
+.sidebar {
+    list-style-type: none;
+}
+
+.sidebar-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 50px 0;    
+    margin-left: 20px;
+}
+
+.sidebar-title {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 25px;
+    transition: all .5s ease;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.sidebar-title:hover {
+    transform: translateX(15px);
+    color: red;
+}
+
+.sidebar-link i {
+    font-size: 20px;
+}
+
+
+
+
+@media (max-width: 1119px) {
+    body {
+        padding-left: 225px;
+    }
+    aside {
+        width: 200px;
+    }
+
+    .sidebar-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+       
+    }
+
+    .sidebar-link i {
+        font-size: 30px;
+        transition: all .5s ease;
+    }
+
+    .sidebar-title {
+        display: none;
+    }
+
+    .sidebar-link i:hover {
+        transform: scale(1.5);
+        color: red;
+    }
+
+    
+    
+}
